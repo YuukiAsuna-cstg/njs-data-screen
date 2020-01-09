@@ -1,6 +1,10 @@
 # njs-data-screen
 
-## Project setup
+## 农交所大数据展示屏
+screen + 屏幕编号对应第几块屏幕<br>
+如：screen1.vue 对应第一块屏幕，screen34.vue 则为第三第四块屏幕合并
+
+### Project setup
 ```
 npm install
 ```
@@ -15,15 +19,6 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
