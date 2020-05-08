@@ -4,21 +4,17 @@
 screen + 屏幕编号对应第几块屏幕<br>
 如：screen1.vue 对应第一块屏幕，screen34.vue 则为第三第四块屏幕合并
 
-### Project setup
+### 安装依赖包
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 项目运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 项目打包
 ```
 npm run build
 ```
-
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

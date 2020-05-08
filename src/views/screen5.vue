@@ -2,25 +2,36 @@
     <div class="screen screen5">
         <div class="chart1">
             <div class="trade-title">
-                各区土地流转交易面积
+                2015-2020上海土地流转交易情况
             </div>
+            <lineNormal></lineNormal>
         </div>
         <div class="chart2">
             <div class="trade-title">
-                2012-2019农村产权交易情况
+                2019各区土地流转交易面积
             </div>
+            <barArea></barArea>
         </div>
         <div class="chart3">
             <div class="trade-title">
-                2012-2019各区农村产权交易笔数
+                2015-2020各区土地流转交易笔数
             </div>
+            <lineLinear></lineLinear>
         </div>
     </div>
 </template>
 
 <script>
+    import lineNormal from '../components/chart-line-normal'
+    import barArea from '../components/chart-bar-area'
+    import lineLinear from '../components/chart-line-linear'
     export default {
-        name: "screen5"
+        name: "screen5",
+        components: {
+            lineNormal,
+            barArea,
+            lineLinear
+        }
     }
 </script>
 
@@ -36,9 +47,8 @@
                 display: flex;
                 flex-direction: column;
                 box-sizing: border-box;
-                padding: 40px 28px;
-                background-image: url("../assets/chart01.png");
-                background-size: 100% 100%;
+                padding: 40px 28px 0;
+                background-color: rgba(4, 61, 114, 0.3);
                 color: #ffffff;
                 .trade-title {
                     height: 44px;
@@ -85,8 +95,7 @@
                 flex-direction: column;
                 box-sizing: border-box;
                 padding: 40px 28px;
-                background-image: url("../assets/chart02.png");
-                background-size: 100% 100%;
+                background-color: rgba(4, 61, 114, 0.3);
                 color: #ffffff;
                 .trade-title {
                     height: 44px;
@@ -132,9 +141,8 @@
                 display: flex;
                 flex-direction: column;
                 box-sizing: border-box;
-                padding: 40px 28px;
-                background-image: url("../assets/chart03.png");
-                background-size: 100% 100%;
+                padding: 40px 28px 0;
+                background-color: rgba(4, 61, 114, 0.3);
                 color: #ffffff;
                 .trade-title {
                     height: 44px;

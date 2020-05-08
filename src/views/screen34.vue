@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    import echartsMap from './echarts-map'
+    import echartsMap from '../components/echarts-map'
     export default {
         name: "screen34",
         data() {

@@ -6,28 +6,28 @@
                 <li class="content">
                     <div class="content-title">分中心</div>
                     <div>
-                        <span class="title-data">10</span>
+                        <span class="title-data">78</span>
                         <span>个</span>
                     </div>
                 </li>
                 <li class="content">
                     <div class="content-title">经纪公司</div>
                     <div>
-                        <span class="title-data">77</span>
+                        <span class="title-data">20</span>
                         <span>个</span>
                     </div>
                 </li>
                 <li class="content">
                     <div class="content-title">审核员</div>
                     <div>
-                        <span class="title-data">121</span>
+                        <span class="title-data">78</span>
                         <span>人</span>
                     </div>
                 </li>
                 <li class="content">
                     <div class="content-title">制单员</div>
                     <div>
-                        <span class="title-data">211</span>
+                        <span class="title-data">166</span>
                         <span>人</span>
                     </div>
                 </li>
@@ -52,12 +52,12 @@
             <div :class="{'visualMinReduce': true, 'disable': !visualMapMinReduceAble}" @click="visualMinReduce">-</div>
         </div>
         <div id="land-info" v-show="showLandInfo" @click="controlLandInfo($event)">
-            <div class="land-box" @click="closeAllInfo">
+            <div class="land-box" @click.stop="closeAllInfo">
                 <div class="land-info-title">
                     {{currentMap}}-{{townName}}{{villageName}}-土地流转
                 </div>
             </div>
-            <div class="land-img-info-click1" @click="landInfoClick1">
+            <div class="land-img-info-click1" @click.stop="landInfoClick1">
                 <div class="point point-animation"></div>
                 <div class="info" v-show="showLandInfo1">
                     <p>流出方名称：{{villageName}}</p>
@@ -77,7 +77,7 @@
                     <p>电子邮箱：ainong@me.com</p>
                 </div>
             </div>
-            <div class="land-img-info-click2" @click="landInfoClick2">
+            <div class="land-img-info-click2" @click.stop="landInfoClick2">
                 <div class="point point-animation"></div>
                 <div class="info" v-show="showLandInfo2">
                     <p>流出方名称：{{villageName}}</p>
@@ -95,7 +95,7 @@
                     <p>电子邮箱：ainong@me.com</p>
                 </div>
             </div>
-            <div class="land-img-info-click3" @click="landInfoClick3">
+            <div class="land-img-info-click3" @click.stop="landInfoClick3">
                 <div class="point1 point-animation"></div>
                 <div class="point2 point-animation"></div>
                 <div class="info" v-show="showLandInfo3">
@@ -213,55 +213,52 @@
                 mapData: [
                     {
                         name: 'A',
-                        value: [5.45, 452, 217]
+                        value: [0, 0, 0]
                     }, {
                         name: 'C',
-                        value: [5.21, 784, 55]
+                        value: [0, 0, 0]
                     }, {
                         name: 'D',
-                        value: [5.75, 762, 104]
+                        value: [0, 0, 0]
                     }, {
                         name: 'B',
-                        value: [8.45, 7862, 80]
+                        value: [0, 0, 0]
                     }, {
                         name: 'G',
-                        value: [5.40, 784, 60]
-                    }, {
-                        name: '闸北区',
-                        value: [35.22, 415, 104]
+                        value: [0, 0, 0]
                     }, {
                         name: 'E',
-                        value: [11.78, 772, 180]
+                        value: [0, 0, 0]
                     }, {
                         name: 'F',
-                        value: [45.11, 1277, 107]
+                        value: [0, 0, 0]
                     }, {
                         name: '闵行区',
-                        value: [18.54, 4877, 89]
+                        value: [1.84, 12096.931, 50]
                     }, {
                         name: '宝山区',
-                        value: [23.44, 646, 78]
+                        value: [0.46, 5398.98, 58]
                     }, {
                         name: '嘉定区',
-                        value: [57.84, 869, 45]
+                        value: [0.03, 2743.92, 4]
                     }, {
                         name: '浦东新区',
-                        value: [110.27, 3354, 86]
+                        value: [1.25, 40220, 313]
                     }, {
                         name: '金山区',
-                        value: [39.10, 5483, 97]
+                        value: [0.46, 45833.06, 490]
                     }, {
                         name: '松江区',
-                        value: [45.07, 4637, 104]
+                        value: [1.07, 4637, 104]
                     }, {
                         name: '青浦区',
-                        value: [67.14, 2487, 48]
+                        value: [2.05, 91036.4, 708]
                     }, {
                         name: '奉贤区',
-                        value: [91.21, 6454, 104]
+                        value: [1.49, 101361.946, 1011]
                     }, {
                         name: '崇明区',
-                        value: [130.67, 248, 124]
+                        value: [0.65, 22274.347, 268]
                     }
                 ],
                 areaData: {
@@ -727,7 +724,7 @@
                 visualMapFull: true,
                 showVillage: false,
 
-                screen34PriceData: 92.1,
+                screen34PriceData: 8.9,
                 showMapTitle: true,
                 showLandInfo: false,
                 // 镇名
@@ -946,7 +943,7 @@
                                         '<div style="display: flex">' +
                                         '&nbsp&nbsp成交金额：' + data[0] + '亿元</div>' +
                                         '<div style="display: flex">' +
-                                        '&nbsp&nbsp成交面积：' + data[1] + '</div>' +
+                                        '&nbsp&nbsp成交面积：' + data[1] + '亩</div>' +
                                         '<div style="display: flex">' +
                                         '&nbsp&nbsp成交数量：' + data[2] + '</div>'
                                     )
@@ -965,7 +962,7 @@
                             data: this.convertData(this.xyData, this.mapData),
                             // 散点大小
                             symbolSize: function (val) {
-                                return val[2] / 2;
+                                return val[2] * 20;
                             },
                             // 什么时候展示散点涟漪特效
                             showEffectOn: 'emphasis',
@@ -1465,10 +1462,7 @@
             },
 
             controlLandInfo(e) {
-                const img = document.getElementById('land-info');
-                if (e.target == img) {
-                    this.showLandInfo = false;
-                }
+                this.showLandInfo = false;
             },
             landInfoClick1() {
                 this.showLandInfo1 = !this.showLandInfo1;
@@ -1485,7 +1479,7 @@
                 this.showLandInfo1 = false;
                 this.showLandInfo2 = false;
             },
-            closeAllInfo(){
+            closeAllInfo() {
                 this.showLandInfo1 = false;
                 this.showLandInfo2 = false;
                 this.showLandInfo3 = false;
@@ -1551,10 +1545,11 @@
             }
 
             /*初始化地图按钮*/
-            .init-map{
+            .init-map {
                 background-image: url("../assets/init.png");
                 background-size: 100% 100%;
             }
+
             /*刷新当前地图按钮*/
             .refresh-map {
                 margin-left: 20px;
@@ -1663,7 +1658,7 @@
                         opacity: 0.7;
                         transform: scale(1);
                     }
-                    100%{
+                    100% {
                         opacity: 0.3;
                         transform: scale(2.5);
                     }

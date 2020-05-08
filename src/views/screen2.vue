@@ -115,11 +115,11 @@
                         right: '15%',
                         bottom: '25%',
                         itemGap: 30,
-                        data: ['土地流转', '集体资产', '非集体资产', '权益']
+                        data: ['土地流转', '集体资产', '集体建设用地', '权益']
                     },
                     series: [
                         {
-                            name: '访问来源',
+                            name: '挂牌情况',
                             type: 'pie',
                             radius: '60%',
                             center: ['35%', '50%'],
@@ -147,7 +147,7 @@
                                 },
                                 {
                                     value: 234,
-                                    name: '非集体资产',
+                                    name: '集体建设用地',
                                     itemStyle: {
                                         // 设置扇形的颜色
                                         color: '#ffc154',
@@ -277,11 +277,11 @@
                             color: '#ffffff',
                             fontSize: 16
                         },
-                        data: ['土地流转', '集体资产', '非集体资产', '权益']
+                        data: ['土地流转', '集体资产', '集体建设用地', '权益']
                     },
                     series: [
                         {
-                            name: '访问来源',
+                            name: '挂牌情况',
                             type: 'pie',
                             radius: '60%',
                             center: ['35%', '50%'],
@@ -309,7 +309,7 @@
                                 },
                                 {
                                     value: 5427,
-                                    name: '非集体资产',
+                                    name: '集体建设用地',
                                     itemStyle: {
                                         // 设置扇形的颜色
                                         color: '#ffc154',

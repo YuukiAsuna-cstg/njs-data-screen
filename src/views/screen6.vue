@@ -7,49 +7,50 @@
             <div class="trade-content">
                 <div class="trade-data">
                     <div class="data-num">
-                        <div class="num-6" ref="screen6TradeData-num6">
-                            <div>{{ screen6TradeData.num6 }}</div>
-                            <div>{{ screen6TradeData.num6Next }}</div>
-                        </div>
-                        <div class="num-5" ref="screen6TradeData-num5">
-                            <div>{{ screen6TradeData.num5 }}</div>
-                            <div>{{ screen6TradeData.num5Next }}</div>
-                        </div>
-                        <div>,</div>
-                        <div class="num-4" ref="screen6TradeData-num4">
-                            <div>{{ screen6TradeData.num4 }}</div>
-                            <div>{{ screen6TradeData.num4Next }}</div>
-                        </div>
-                        <div class="num-3" ref="screen6TradeData-num3">
-                            <div>{{ screen6TradeData.num3 }}</div>
-                            <div>{{ screen6TradeData.num3Next }}</div>
-                        </div>
-                        <div class="num-2" ref="screen6TradeData-num2">
-                            <div>{{ screen6TradeData.num2 }}</div>
-                            <div>{{ screen6TradeData.num2Next }}</div>
-                        </div>
-                        <div>.</div>
-                        <div class="num-1" ref="screen6TradeData-num1">
-                            <div>{{ screen6TradeData.num1 }}</div>
-                            <div>{{ screen6TradeData.num1Next }}</div>
-                        </div>
-                        <div class="num-0" ref="screen6TradeData-num0">
-                            <div>{{ screen6TradeData.num0 }}</div>
-                            <div>{{ screen6TradeData.num0Next }}</div>
-                        </div>
+                        32.0966
+<!--                        <div class="num-6" ref="screen6TradeData-num6">-->
+<!--                            <div>{{ screen6TradeData.num6 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num6Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div class="num-5" ref="screen6TradeData-num5">-->
+<!--                            <div>{{ screen6TradeData.num5 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num5Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div>,</div>-->
+<!--                        <div class="num-4" ref="screen6TradeData-num4">-->
+<!--                            <div>{{ screen6TradeData.num4 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num4Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div class="num-3" ref="screen6TradeData-num3">-->
+<!--                            <div>{{ screen6TradeData.num3 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num3Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div class="num-2" ref="screen6TradeData-num2">-->
+<!--                            <div>{{ screen6TradeData.num2 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num2Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div>.</div>-->
+<!--                        <div class="num-1" ref="screen6TradeData-num1">-->
+<!--                            <div>{{ screen6TradeData.num1 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num1Next }}</div>-->
+<!--                        </div>-->
+<!--                        <div class="num-0" ref="screen6TradeData-num0">-->
+<!--                            <div>{{ screen6TradeData.num0 }}</div>-->
+<!--                            <div>{{ screen6TradeData.num0Next }}</div>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
         <div class="plant-type">
             <div class="plant-title">
-                2012-2019年受让方类型占比
+                2015-2020年流入方类型占比
             </div>
             <div class="plant-charts" ref="plant-type-chart" style="height:300px"></div>
         </div>
         <div class="plant-direction">
             <div class="plant-title">
-                2012-2019年受让方种植方向占比
+                2015-2020年流入方种植方向占比
             </div>
             <div class="plant-charts" ref="plant-direction-chart" style="height:300px"></div>
         </div>
